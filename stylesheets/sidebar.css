@@ -1,0 +1,160 @@
+/* The whole sidebar */
+
+@media only screen and (max-width: 768px) {
+    .sidebarContainer {
+        display: none !important;
+    }
+    .panelContainer {
+        flex-direction: column;
+    }
+    .panel1 {
+        margin-bottom: 5px !important;
+    }
+    .panel2 {
+        margin-top: 5px !important;
+    }
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    border-radius: 5px;
+    background: rgb(74, 189, 172);
+    background: linear-gradient(180deg, rgba(74, 189, 172, 1) 0%, rgba(101, 199, 185, 1) 50%);
+    transition: 0.1s;
+    z-index: 999;
+    box-shadow: -1px 3px 16px -10px rgba(0, 0, 0, .73);
+}
+
+
+/* The code to center a button within the sidebar */
+
+.buttonWrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newHub {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.sidebar img {
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    right: 10px;
+    opacity: .3;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    /* margin-top: 10px; */
+    padding: 0;
+    padding: 10px;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    transition: .1s;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    /* box-shadow: -1px 3px 16px -10px rgba(0, 0, 0, 1); */
+    /* border-left: 4px solid white; */
+    background-color: #3CA797;
+}
+
+.border {
+    border-radius: 5px;
+    box-shadow: -1px 3px 16px -10px rgba(0, 0, 0, .73);
+}
+
+.pageLayout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebarContainer {
+    flex: 2;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 10px;
+    margin-right: 0px;
+}
+
+.dashboard {
+    flex: 18;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashPanel {
+    border: 1px solid #4ABDAC;
+    flex: 1;
+    margin: 0 10px;
+    /* padding: 10px; */
+    border-radius: 5px;
+}
+
+.dashTitle {
+    height: 50px;
+    background-color: #4ABDAC;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+.dashTitle h1 {
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+.dashTitle img {
+    width: 20px;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+
+.panelContainer {
+    display: flex;
+    flex: 1;
+}
+
+.dashPanel h1 {
+    text-align: center;
+    color: white;
+    background-color: #4ABDAC;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.actionbutton {
+    border: 1px solid rgb(74, 189, 172);
+    padding: 7px;
+    width: 120px;
+    font-size: 14px;
+    color: white;
+    background: rgb(74, 189, 172);
+    background: linear-gradient(180deg, rgba(74, 189, 172, 1) 0%, rgba(101, 199, 185, 1) 50%);
+}
